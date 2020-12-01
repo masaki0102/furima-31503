@@ -64,7 +64,10 @@ describe Item, type: :model do
         expect(@item.errors.full_messages).to include('Price Half-width number')
       end
       it 'priceが300~9999999の範囲外では登録できない' do
-        @item.price = '10000000'
+        @item.price = 10000000
+        @item.valid?
+        expect(@item.errors.full_messages).to include('Price Out of setting range')
+        @item.price = 100
         @item.valid?
         expect(@item.errors.full_messages).to include('Price Out of setting range')
       end
