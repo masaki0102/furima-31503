@@ -62,7 +62,7 @@
 | building      | string     |                               |
 | phone_number  | string     | null:false                    |
 | order_id      | references | null:false, foreign_key: true |
-（ここに追記していく）
+
 
 ### Association
 - belongs_to :order
