@@ -4,8 +4,9 @@ FactoryBot.define do
     prefecture_id            { Random.rand(2..48) }
     city                     { '中野区' }
     address                  { '1-1' }
-    phone_number             { '12345678910'}
+    phone_number             { '12345678910' }
     user_id                  { Random.rand(1..100) }
     item_id                  { Random.rand(1..100) }
-  end 
+    token { 'tok_abcdefghijk00000000000000000' }
+  end
 end
