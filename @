@@ -1,8 +1,0 @@
-eval "$(rbenv init -)"
-eval "$(rbenv init -)"
-export PATH="/usr/local/opt/mysql@5.6/bin:$PATH"
-export PATH="/usr/local/opt/mysql@5.6/bin:$PATH"
-export BASIC_AUTH_USER='admin'
-export BASIC_AUTH_PASSWORD='2222'
-export PAYJP_SECRET_KEY='sk_test_e671f1b943ef7103713d9661'
-export PAYJP_PUBLIC_KEY='pk_test_46182fa3ad809d14c7ad1405'
