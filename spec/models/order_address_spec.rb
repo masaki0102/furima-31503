@@ -10,6 +10,10 @@ describe OrderAddress, type: :model do
       it 'postal_code、prefecture_id、city、address、phone_number、user_id、item_idが存在すれば登録できる' do
         expect(@order_address).to be_valid
       end
+      it '建物名が空でも登録できる' do
+        @order_address.building = nil
+        expect(@order_address).to be_valid
+      end
     end
 
     context '商品の購入が上手くいかないとき' do

@@ -4,6 +4,7 @@ FactoryBot.define do
     prefecture_id            { Random.rand(2..48) }
     city                     { '中野区' }
     address                  { '1-1' }
+    building                 { '新東京ビル' }
     phone_number             { '12345678910' }
     user_id                  { Random.rand(1..100) }
     item_id                  { Random.rand(1..100) }
